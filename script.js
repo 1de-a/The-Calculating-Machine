@@ -7,6 +7,7 @@ let holder = "";
 let char = [];
 let values = [];
 let displayText = "";
+let midText;
 
 
 
@@ -47,6 +48,11 @@ para = document.createElement('p');
 
 output = document.getElementById("item1")
 
+//creates the top line text item
+
+let topPara = document.createElement("p");
+let topOutput = document.getElementById("line2")
+
 
 
 //function to fill the holder with pressed buttons
@@ -60,8 +66,8 @@ function logger(btn) {
 
     holder = holder + btn.value;
     char.push(btn.value);
-    para.textContent = char.join("");
-    output.appendChild(para);
+    topPara.textContent = char.join("");
+    topOutput.appendChild(topPara);
 }
 
 
@@ -71,12 +77,18 @@ function logger(btn) {
 
 function operation(btn) {
 
-    //if (result != undefined) {location.reload()}
+    if (midText != undefined) {
+
+
+
+
+
+    }
 
     values.push(holder);
     char.push(btn.value);
     values.push(btn.value);
-    para.textContent=char.join("");
+    topPara.textContent=char.join("");
     holder = "" ;
     result = "";
     console.log(values);
@@ -112,6 +124,7 @@ if (values.indexOf("")>=0) {
     
     displayText = "Error! Pls press CLR";
     para.textContent = displayText;
+    output.appendChild(para);
     console.log(values)
     
     
@@ -163,10 +176,14 @@ while (values.indexOf("+")>=0) {
 }
 if (displayText===""){
 para.textContent = Number(values[0]).toFixed(4)*10/10;
+output.appendChild(para);
 holder = Number(values[0]);
 values.pop();
 result = "end";
-console.log(values)
+console.log(values);
+midText = holder;
+topPara.textContent=midText;
+char = [midText]
 
 }}
 

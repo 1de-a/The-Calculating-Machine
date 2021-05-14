@@ -12,7 +12,7 @@ header {
     display: grid;
     grid-template-columns: auto auto auto auto;
     margin: auto;
-    width: 30%;
+    width: 35%;
     grid-gap: 5px;
     background-color: #717786 ;
     border: 10px solid #717786 ;
@@ -58,8 +58,8 @@ header {
   
   #item1 {
     grid-column: 1 / 5;
-    grid-row: 1 / 20;
-    font-size: 40px;
+    
+    font-size: 30px;
     
     color:#777777;
     
@@ -71,7 +71,7 @@ header {
     text-shadow:0px 1px 0px #ffffff;
 
     text-align: right;
-    height: 120px;
+    
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
@@ -82,7 +82,14 @@ header {
     border-radius:6px;
     border:1px solid #dcdcdc;
    
+    height: 120px;
     
+  }
+
+  #line2 {
+
+    text-align: left;
+    height: 10px;
     
   }
 
