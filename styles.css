@@ -1,0 +1,133 @@
+header {
+
+    height: 120px;
+}
+
+
+
+
+
+.grid-container {
+    
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: auto;
+    width: 30%;
+    grid-gap: 5px;
+    background-color: #717786 ;
+    border: 10px solid #717786 ;
+    border-radius: 6px;
+    box-shadow: 3px 3px 15px 6px rgba(0,0,0,0.59);
+  }
+ 
+  
+  .grid-container > button:active {
+    position:relative;
+    top:1px;
+  }
+  
+          
+  .grid-container > button {
+    
+    box-shadow:inset 0px 1px 0px 0px #ffffff;
+    background:linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+    background-color:#ededed;
+    border-radius:6px;
+    border:1px solid #dcdcdc;
+    display:inline-block;
+    cursor:pointer;
+    color:#777777;
+    font-family:Arial;
+    font-size:30px;
+    font-weight:bold;
+    padding:20px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #ffffff;
+  }
+
+  .grid-container > button:hover {
+
+    
+    color: white;
+    
+
+  }
+
+  
+  
+  
+  #item1 {
+    grid-column: 1 / 5;
+    grid-row: 1 / 20;
+    font-size: 40px;
+    
+    color:#777777;
+    
+    font-family:Arial;
+    
+    font-weight:bold;
+    
+    text-decoration:none;
+    text-shadow:0px 1px 0px #ffffff;
+
+    text-align: right;
+    height: 120px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+
+    box-shadow:inset 0px 1px 0px 0px #ffffff;
+    background:linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+    background-color:#ededed;
+    border-radius:6px;
+    border:1px solid #dcdcdc;
+   
+    
+    
+  }
+
+  #item20 {
+      
+      grid-column: 3 / 5;
+      background: #7afd3d;
+      
+      
+  }
+
+
+  #item20:hover {
+
+    color: white;
+    
+  }
+
+  #item5  {
+        
+        background:#99ff99;
+        
+        
+    }
+
+  #item9  {
+    background:#99ff99;
+    }
+    
+  #item13 {
+    background:#99ff99;
+    }
+
+  #item17 {
+    background:#99ff99;
+    }
+
+  #item18 {
+    background:#99ff99;
+    }
+                    
+  #item19 {
+    background:#99ff99;
+    }     
+    #item14 {
+      background:#99ff99;
+      font-size: 20px;
+      }     
