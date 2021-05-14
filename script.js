@@ -182,7 +182,7 @@ values.pop();
 result = "end";
 console.log(values);
 midText = holder;
-topPara.textContent=midText;
+topPara.textContent=Number(midText).toFixed(4)*10/10;
 char = [midText]
 
 }}
