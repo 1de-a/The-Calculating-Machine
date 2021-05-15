@@ -1,6 +1,3 @@
-
-
-
 let a = 0;
 let b = 0;
 let result ;
@@ -37,7 +34,7 @@ function divide(a,b){
 
     if (b===0) {
     
-        displayText = "Error!";
+        displayText = "Error! Pls press CLR";
         para.textContent = displayText;
         
     
@@ -45,70 +42,18 @@ function divide(a,b){
     
 }
 
-//square function 
-
-function square(a) {
-
-        result = a*a;
-        para.textContent = Number(result).toFixed(4)*10/10;
-        output.appendChild(para);
-        
-        holder = result;
-        values=[result];
-        
-        
-        midText = Number(result).toFixed(4)*10/10;
-        topPara.textContent=Number(result).toFixed(4)*10/10;
-        char = [midText];
-        result = "end";
-
-
-
-
-}
-
-//squareroot function
-
-function sqroot(a) {
-if (a>=0) {result = Math.sqrt(a)
-
-    
-        para.textContent = Number(result).toFixed(4)*10/10;
-        output.appendChild(para);
-        
-        holder = result;
-        values=[result];
-        
-        
-        midText = Number(result).toFixed(4)*10/10;
-        topPara.textContent=Number(result).toFixed(4)*10/10;
-        char = [midText];
-        result = "end";
-
-}
-else  { 
-    
-    displayText = "Error!";
-    para.textContent = displayText
-
-}
-   
-
-}
-
-
 //creates the display text item
 
 para = document.createElement('p');
 
 
-output = document.getElementById("p2")
+output = document.getElementById("p1")
 
 //creates the top line text item
 
 let topPara = document.createElement("p");
 
-let topOutput = document.getElementById("p1")
+let topOutput = document.getElementById("p2")
 
 
 
@@ -181,9 +126,9 @@ function resultFunc(values) {
 
 if (values.indexOf("")>=0) {
     
-    displayText = "Error!";
-    topPara.textContent = displayText;
-    topOutput.appendChild(para);
+    displayText = "Error! Pls press CLR";
+    para.textContent = displayText;
+    output.appendChild(para);
    
     console.log(values)
     
@@ -242,7 +187,7 @@ holder = Number(values[0]);
 values.pop();
 result = "end";
 console.log(values);
-midText = Number(holder).toFixed(4)*10/10;
+midText = holder;
 topPara.textContent=Number(midText).toFixed(4)*10/10;
 char = [midText]
 

@@ -1,8 +1,7 @@
 header {
 
-    height: 120px;
+    height: 20vh
 }
-
 
 
 
@@ -12,12 +11,12 @@ header {
     display: grid;
     grid-template-columns: auto auto auto auto;
     margin: auto;
-    width: 275px;
-    grid-gap: 5px;
+    width: 30vw;
+    grid-gap: 1vw;
     background-color: #717786 ;
-    border: 10px solid #717786 ;
-    border-radius: 6px;
-    box-shadow: 3px 3px 15px 6px rgba(0,0,0,0.59);
+    border: 1vw solid #717786 ;
+    border-radius: 3%;
+    box-shadow: 0 0 2vw 2vw rgba(0,0,0,0.59);
   }
  
   
@@ -32,17 +31,19 @@ header {
     box-shadow:inset 0px 1px 0px 0px #ffffff;
     background:linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
     background-color:#ededed;
-    border-radius:6px;
+    border-radius:100%;
     border:1px solid #dcdcdc;
     display:inline-block;
     cursor:pointer;
     color:#777777;
     font-family:Arial;
-    font-size:30px;
+    font-size: 3vw;
     font-weight:bold;
-    padding:12px;
+    padding:1vw;
     text-decoration:none;
     text-shadow:0px 1px 0px #ffffff;
+    height: 6vw;
+    width: 6vw;
   }
 
   .grid-container > button:hover {
@@ -56,21 +57,40 @@ header {
   
   
   
-  #item1 {
+  #p1 {
+   
+    
+    font-size: 5vw;
+    
+    text-align: right;
+    margin-right: 5%;
+    
+  
+  }
+
+  #p2  { 
+    
+    font-size: 5vw;
+    text-align: left;
+    line-height: 0;
+    margin-left: 5%;
+
+  }
+
+  
+   #item1 {
+
+
+    height: 15vh;
+    
+    
+    
     grid-column: 1 / 5;
-    
-    font-size: 30px;
-    
     color:#777777;
-    
     font-family:Arial;
-    
     font-weight:bold;
-    
     text-decoration:none;
     text-shadow:0px 1px 0px #ffffff;
-
-    text-align: right;
     
     text-overflow: ellipsis;
     overflow: hidden;
@@ -81,60 +101,21 @@ header {
     background-color:#ededed;
     border-radius:6px;
     border:1px solid #dcdcdc;
+    
    
-    height: 105px;
-    
   }
 
-  #line2 {
-
-    text-align: left;
-    height: 5px;
-    
-  }
-
-  #item20 {
+  #item21 {
       
-      grid-column: 3 / 5;
-      background: #7afd3d;
-      
-      
-  }
-
-
-  #item20:hover {
-
-    color: white;
+    background: #7afd3d;
     
-  }
+}
+ 
 
-  #item5  {
+  #item5, #item9, #item13, #item16, #item17, #item18, #item19, #item20 {
         
         background:#99ff99;
-        
-        
+           
     }
 
-  #item9  {
-    background:#99ff99;
-    }
-    
-  #item13 {
-    background:#99ff99;
-    }
-
-  #item17 {
-    background:#99ff99;
-    }
-
-  #item18 {
-    background:#99ff99;
-    }
-                    
-  #item19 {
-    background:#99ff99;
-    }     
-    #item14 {
-      background:#99ff99;
-      font-size: 20px;
-      }     
+ 

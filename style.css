@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+body {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat" , sans-serif;
+    background: #ccf2f4;
+
+
+}
+
+
+.main-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin: 12rem auto;
+	margin-bottom: 2rem;
+    
+}
+
+.display {
+	background: #212121;
+	padding: 1rem;
+	border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    
+    box-shadow: inset 2px 3px 5px 0px rgba(0,0,0,0.7);
+    outline: none;
+
+    height: 2rem;
+	border-top: 1.5rem solid #f9f3f3;
+	border-right: 0.6rem solid #f9f3f3;
+    border-left: 0.6rem solid #f9f3f3;
+	background: #dddddd;
+    box-shadow: 2px 3px 3px 0px rgba(0,0,0,0.5);
+    
+    
+
+    
+}
+
+.displayTop {
+    text-align: left;
+    max-width: 11ch;
+	border: none;
+	outline: none;
+	background: transparent;
+	
+    border-radius: .725rem;
+    position: relative;
+    bottom: 5rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+
+    
+
+
+}
+.displayBot{
+    
+    text-align: right;
+    position: relative;
+    bottom: 6rem; 
+	border: none;
+	outline: none;
+	background: transparent;
+	max-width: 11ch;
+    border-radius: .725rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    
+
+
+}
+
+.brand {
+   color: white;
+   position: relative;
+   bottom: 3.5rem;
+   left: 3rem;
+   font-size: 1rem;
+   text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc,
+                0 20px 30px rgba(0, 0, 0, 0.5);
+   
+		
+
+
+}
+
+.calculator .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 100%;
+    grid-gap: 0.4rem;
+    padding: 0.5rem;
+    background: #f9f3f3;
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    box-shadow: 2px 3px 3px 0px rgba(0,0,0,0.5);
+
+    max-width: 300px;
+	width: 10rem;
+}
+
+.buttons button {
+    font-size: 1.325rem;
+    padding: 0.5rem 0;
+    background: #616161af;
+    border: 0px solid transparent;
+    outline: none;
+    text-decoration: none;
+    border-radius: 10%;
+    box-shadow: 2px 3px 3px 0px rgba(0,0,0,0.5);
+    color: #DFDFDF;
+    cursor: pointer;
+    transition: all .15s ease-in-out;
+}
+
+button.equal {
+	grid-column: 3 / 5;
+	
+}
+
+button.equal:hover {
+	background: #91c788;
+	color: #000;
+    transform: translateY(-0.1rem);
+}
+
+button.digits:hover{
+	background: #bdbdbd;
+	color: #000;
+	transform: translateY(-0.1rem);
+}
+
+button.operators:hover {
+	background: #f8dc81;
+	color: #000;
+	transform: translateY(-0.1rem);
+}
+
+button.special:hover {
+	background: #a58faa;
+	color: #000;
+	transform: translateY(-0.1rem);
+}
+
+button.clear:hover {
+	background: #ff7171;
+	color: #000;
+	transform: translateY(-0.1rem);
+}
+
+button.digits:active,
+button.operators:active,
+button.clear:active,
+button.equal:active {
+	transform: translateY(0rem);
+}
+
+footer {
+	
+	text-align: center;
+	
+}
